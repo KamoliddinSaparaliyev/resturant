@@ -1,0 +1,28 @@
+GET http://localhost:3000/categories
+
+###
+POST  http://localhost:3000/categories
+content-type: application/json
+
+{
+  "name": "salatlar"
+}
+
+###
+GET  http://localhost:3000/categories
+
+
+###
+PATCH   http://localhost:3000/categories/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+    "name" :"Palov" ,
+    "inc_by" :  1 
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/categories/64d63420d4d2f25c2ba7e822

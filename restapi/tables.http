@@ -1,0 +1,24 @@
+GET http://localhost:3000/tables/
+
+### 
+GET http://localhost:3000/tables/64d5a9988cd90c6d4f3e0dc0
+
+### 
+POST http://localhost:3000/tables/
+Content-Type: application/json
+
+{
+    "number": 4
+}
+
+### 
+PATCH http://localhost:3000/tables/64d5a9988cd90c6d4f3e0dc0
+Content-Type: application/json
+
+{
+    "number": 3
+}
+
+
+### 
+DELETE  http://localhost:3000/tables/64d5a9988cd90c6d4f3e0dc0

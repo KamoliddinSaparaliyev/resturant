@@ -1,0 +1,22 @@
+GET http://localhost:3000/users
+
+####
+POST  http://localhost:3000/users
+content-type: application/json
+
+{
+    "first_name" : "Ali" ,
+    "last_name" : "Vakiyev" ,
+    "username" : "ali123", 
+    "password" : "1234", 
+    "role" :"admin"
+}
+
+####
+POST  http://localhost:3000/users/login
+content-type: application/json
+
+{
+    "username" : "ali123", 
+    "password" : "1234"
+}

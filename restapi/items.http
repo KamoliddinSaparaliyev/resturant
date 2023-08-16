@@ -1,0 +1,82 @@
+GET http://localhost:3000/items
+
+
+
+###
+POST  http://localhost:3000/items
+content-type: application/json
+
+{
+  "name": "Burger",
+  "description": "Delicious beef burger with fresh vegetables",
+  "category_id": "64dc790018777abfe201d7c2",
+  "type": "food",
+  "photo": "https://example.com/burger.jpg",
+  "in_menu":true
+}
+
+###
+GET  http://localhost:3000/items/64d63420d4d2f25c2ba7e822
+
+
+###
+PATCH   http://localhost:3000/items/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+  "name": "Burger",
+  "description": "Delicious beef burger with fresh vegetables",
+  "category_id": "64dc790018777abfe201d7c2",
+  "type": "food",
+  "photo": "https://example.com/burger.jpg",
+  "in_menu": false
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/items/64d63420d4d2f25c2ba7e822
+
+
+######################
+#### ITEM OPTION #####
+######################
+
+
+
+GET http://localhost:3000/item-options
+
+###
+POST  http://localhost:3000/item-options
+content-type: application/json
+
+{
+  "item_id": "64dc794718777abfe201d7c5", 
+  "measurement_id": "64dc77fa18777abfe201d7bf", 
+  "unit": "piece",
+  "price": 10.99
+}
+
+###
+GET  http://localhost:3000/item-options/64d63420d4d2f25c2ba7e822
+
+
+###
+PATCH   http://localhost:3000/item-options/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+  "name": "Burger",
+  "description": "Delicious beef burger with fresh vegetables",
+  "category_id": "64dc790018777abfe201d7c2",
+  "type": "food",
+  "photo": "https://example.com/burger.jpg",
+  "in_menu": false
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/item-options/64d63420d4d2f25c2ba7e822

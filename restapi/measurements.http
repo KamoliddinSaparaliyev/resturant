@@ -1,0 +1,32 @@
+GET http://localhost:3000/measurements
+
+
+
+###
+POST  http://localhost:3000/measurements
+content-type: application/json
+
+{
+    "name" : "Chortoq",
+    "inc_by" : 1
+}
+
+
+###
+GET  http://localhost:3000/measurements/64d63420d4d2f25c2ba7e822
+
+
+###
+PATCH   http://localhost:3000/measurements/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+    "name" :"Palov" ,
+    "inc_by" :  1 
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/measurements/64d63420d4d2f25c2ba7e822

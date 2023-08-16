@@ -1,0 +1,79 @@
+GET http://localhost:3000/orders
+
+
+
+###
+POST  http://localhost:3000/orders
+content-type: application/json
+
+{
+  "table_id": "64dc76a91cc0c3871f18f1de", 
+  "waiter_id": "64dc77fa18777abfe201d7bf",
+  "status":"pending"
+}
+
+###
+GET  http://localhost:3000/orders/64d63420d4d2f25c2ba7e822
+
+
+###
+PATCH   http://localhost:3000/orders/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+  "name": "Burger",
+  "description": "Delicious beef burger with fresh vegetables",
+  "category_id": "64dc790018777abfe201d7c2",
+  "type": "food",
+  "photo": "https://example.com/burger.jpg",
+  "in_menu": false
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/orders/64d63420d4d2f25c2ba7e822
+
+
+######################
+#### ORDER ITEMS #####
+######################
+
+
+
+GET http://localhost:3000/order-items
+
+###
+POST  http://localhost:3000/order-items
+content-type: application/json
+
+{
+  "item_id": "6175737a448f9c4f9c1b8f08",
+  "order_id": "6175737a448f9c4f9c1b8f09",
+  "quantity": 2
+}
+
+
+###
+GET  http://localhost:3000/order-items/64d63420d4d2f25c2ba7e822
+
+
+###
+PATCH   http://localhost:3000/order-items/64d63420d4d2f25c2ba7e822
+content-type: application/json
+
+{
+  "name": "Burger",
+  "description": "Delicious beef burger with fresh vegetables",
+  "category_id": "64dc790018777abfe201d7c2",
+  "type": "food",
+  "photo": "https://example.com/burger.jpg",
+  "in_menu": false
+}
+
+
+
+
+###
+DELETE   http://localhost:3000/order-items/64d63420d4d2f25c2ba7e822
